@@ -4,7 +4,6 @@ This document lists all available Claude Code plugins and their commands in the 
 
 - [Commit From Changes](#commit-from-changes-plugin)
 - [Create Pr From Changes](#create-pr-from-changes-plugin)
-- [Example Plugin](#example-plugin-plugin)
 - [Kube Api Review](#kube-api-review-plugin)
 
 ### Commit From Changes Plugin
@@ -25,15 +24,6 @@ Create a GitHub pull request from the current branch
 - **`/create-pr-from-changes:example`** - Example command
 
 See [plugins/create-pr-from-changes/README.md](plugins/create-pr-from-changes/README.md) for detailed documentation.
-
-### Example Plugin Plugin
-
-Example plugin demonstrating command structure
-
-**Commands:**
-- **`/example-plugin:hello` `[name]`** - Say hello to someone
-
-See [plugins/example-plugin/README.md](plugins/example-plugin/README.md) for detailed documentation.
 
 ### Kube Api Review Plugin
 
