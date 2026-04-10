@@ -1,39 +1,10 @@
 {
-  "name": "{{MARKETPLACE_NAME}}",
-  "owner": "{{OWNER_NAME}}",
+  "name": "kubernetes-maintainer-skills",
+  "owner": "kannon92",
   "plugins": [
     {
-      "name": "example-plugin",
-      "description": "Example plugin demonstrating command structure",
-      "version": "unknown",
-      "commands": [],
-      "skills": [],
-      "hooks": [],
-      "agents": [],
-      "has_readme": false,
-      "has_mcp": false
-    },
-    {
-      "name": "kube-api-review",
-      "description": "TODO: Add description",
-      "version": "0.0.1",
-      "commands": [
-        {
-          "name": "kube-api-review",
-          "description": "Review Kubernetes API types against API conventions",
-          "synopsis": "",
-          "argument_hint": ""
-        }
-      ],
-      "skills": [],
-      "hooks": [],
-      "agents": [],
-      "has_readme": true,
-      "has_mcp": false
-    },
-    {
       "name": "commit-from-changes",
-      "description": "TODO: Add description",
+      "description": "Stage and commit changes with a Kubernetes-style commit message",
       "version": "0.0.1",
       "commands": [
         {
@@ -51,7 +22,7 @@
     },
     {
       "name": "create-pr-from-changes",
-      "description": "TODO: Add description",
+      "description": "Create a GitHub pull request from the current branch",
       "version": "0.0.1",
       "commands": [
         {
@@ -64,6 +35,24 @@
           "name": "example",
           "description": "Example command",
           "synopsis": "/create-pr-from-changes:example",
+          "argument_hint": ""
+        }
+      ],
+      "skills": [],
+      "hooks": [],
+      "agents": [],
+      "has_readme": true,
+      "has_mcp": false
+    },
+    {
+      "name": "kube-api-review",
+      "description": "Review Kubernetes API types against API conventions",
+      "version": "0.0.1",
+      "commands": [
+        {
+          "name": "kube-api-review",
+          "description": "Review Kubernetes API types against API conventions",
+          "synopsis": "",
           "argument_hint": ""
         }
       ],
