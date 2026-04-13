@@ -61,6 +61,24 @@
       "agents": [],
       "has_readme": true,
       "has_mcp": false
+    },
+    {
+      "name": "sig-node-testgrid-prompt",
+      "description": "TODO: Add description",
+      "version": "0.0.1",
+      "commands": [
+        {
+          "name": "sig-node-testgrid-prompt",
+          "description": "",
+          "synopsis": "",
+          "argument_hint": ""
+        }
+      ],
+      "skills": [],
+      "hooks": [],
+      "agents": [],
+      "has_readme": true,
+      "has_mcp": false
     }
   ]
 }

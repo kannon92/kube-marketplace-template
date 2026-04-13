@@ -18,6 +18,11 @@
       "name": "kube-api-review",
       "source": "./plugins/kube-api-review",
       "description": "Review Kubernetes API types against API conventions"
+    },
+    {
+      "name": "sig-node-testgrid-prompt",
+      "source": "./plugins/sig-node-testgrid-prompt",
+      "description": "TODO: Add description"
     }
   ]
 }

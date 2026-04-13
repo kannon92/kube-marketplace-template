@@ -22,6 +22,7 @@ Install a specific plugin:
 - **commit-from-changes**: Stage and commit changes with a Kubernetes-style commit message
 - **create-pr-from-changes**: Create a GitHub pull request from the current branch
 - **kube-api-review**: Review Kubernetes API types against API conventions
+- **sig-node-testgrid-prompt**: Triage the sig-node TestGrid dashboard and generate a comprehensive failure report
 <!-- END PLUGINS -->
 
 ## Development

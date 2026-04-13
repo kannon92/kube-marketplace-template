@@ -1,0 +1,8 @@
+{
+  "name": "sig-node-testgrid-prompt",
+  "description": "Triage the sig-node TestGrid dashboard and generate a comprehensive failure report",
+  "version": "0.0.1",
+  "author": {
+    "name": "dims"
+  }
+}
