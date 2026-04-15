@@ -1,10 +1,27 @@
-# Sig-Node TestGrid Triage Prompt
+---
+name: sig-node-testgrid-prompt
+description: Regenerate the sig-node TestGrid triage report
+user-invocable: true
+---
+
+## Name
+
+sig-node-testgrid-prompt:sig-node-testgrid-prompt
+
+## Synopsis
+
+Regenerate the sig-node TestGrid triage report from scratch.
+
+## Description
 
 Use this in a fresh Claude Code session to regenerate the sig-node triage report.
 
 Goal:
 - update the local report at `~/notes/sig-node-testgrid-triage.md`
 - keep this prompt file at `~/notes/sig-node-testgrid-triage-prompt.md`
+
+## Implementation
+
 Copy-paste the block below:
 
 ````
