@@ -23,6 +23,11 @@
       "name": "sig-node-testgrid-prompt",
       "source": "./plugins/sig-node-testgrid-prompt",
       "description": "TODO: Add description"
+    },
+    {
+      "name": "triage-prow-job",
+      "source": "./plugins/triage-prow-job",
+      "description": "TODO: Add description"
     }
   ]
 }
