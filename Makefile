@@ -3,8 +3,8 @@
 # Container runtime (podman or docker)
 CONTAINER_RUNTIME ?= $(shell command -v podman 2>/dev/null || echo docker)
 
-# claudelint image
-CLAUDELINT_IMAGE = ghcr.io/stbenjam/claudelint:main
+# skillsaw image
+SKILLSAW_IMAGE = ghcr.io/stbenjam/skillsaw
 
 # Template repository
 TEMPLATE_REPO := https://raw.githubusercontent.com/stbenjam/claude-marketplace-template/main
@@ -16,13 +16,13 @@ help: ## Show this help message
 
 .PHONY: lint
 lint: ## Run plugin linter (verbose, strict mode)
-	@echo "Running claudelint with $(CONTAINER_RUNTIME)..."
-	$(CONTAINER_RUNTIME) run --rm -v $(PWD):/workspace:Z ghcr.io/stbenjam/claudelint:main -v --strict
+	@echo "Running skillsaw with $(CONTAINER_RUNTIME)..."
+	$(CONTAINER_RUNTIME) run --rm -v $(PWD):/workspace:Z ${SKILLSAW_IMAGE} -v --strict
 
 .PHONY: lint-pull
 lint-pull: ## Pull the latest claudelint image
 	@echo "Pulling latest claudelint image..."
-	$(CONTAINER_RUNTIME) pull $(CLAUDELINT_IMAGE)
+	$(CONTAINER_RUNTIME) pull $(SKILLSAW_IMAGE)
 
 .PHONY: update
 update: ## Update plugin documentation and website data
