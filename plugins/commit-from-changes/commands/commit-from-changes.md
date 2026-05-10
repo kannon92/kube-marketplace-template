@@ -14,7 +14,7 @@ Stage and commit changes with a Kubernetes-style commit message.
 
 ## Description
 
-Generates a commit for the current changes following Kubernetes commit message conventions. Stages all changes if nothing is staged, reviews the diff, and produces a properly formatted commit message.
+Generates a commit for the current changes following Kubernetes commit message conventions. Stages all changes if nothing is staged, reviews the diff, and produces a commit message with a capitalized imperative subject line under 72 characters and a body that explains the reason for the change.
 
 ## Implementation
 
@@ -30,6 +30,6 @@ Generate a commit for the current changes following these rules:
    - Body should explain WHY the change was made if not obvious from the subject
    - Wrap body lines at 72 characters
 4. NEVER include the word "claude" anywhere in the commit message
-5. NEVER use special characters like # @ ! $ % ^ & * in the commit message
+5. Use only plain alphanumeric characters, spaces, hyphens, underscores, colons, parentheses, and periods in the commit message; never use special characters like # @ ! $ % ^ & *
 6. Show the generated commit message to the user and ask for approval before committing
 7. Commit with the approved message using `git commit`
