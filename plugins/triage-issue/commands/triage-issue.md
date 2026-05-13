@@ -40,7 +40,7 @@ Read the issue description carefully and identify:
 - Search for relevant code using keywords from the issue (metric names, function names, error messages)
 - Trace the full code path from input to the reported symptom
 - Identify the exact location where the bug occurs (file, line number, function)
-- Look for similar patterns in the codebase that handle the same scenario correctly
+- Look for similar patterns in the codebase that handle the same scenario without the bug
 - Check git history for recent changes that may have introduced the bug
 
 ### Step 4: Identify scope and impact
@@ -60,7 +60,7 @@ Read the issue description carefully and identify:
 
 Use `gh issue comment` to post a structured comment with the heading `## AI Analysis` and the following sections:
 - **Root Cause:** What is wrong and where in the code (include file paths and line numbers)
-- **Code Path:** The buggy code path, with references to how similar code handles it correctly
+- **Code Path:** The buggy code path, with references to how similar code handles it without the bug
 - **Affected Components:** List what is broken
 - **Fix:** The changes needed, files involved, and risk level
 
