@@ -69,7 +69,7 @@ See [plugins/triage-issue/README.md](plugins/triage-issue/README.md) for detaile
 
 ### Triage Prow Job Plugin
 
-Triage a failing Prow job by fetching its artifacts, analyzing test results, and identifying root causes
+Triage a failing Prow job by fetching its artifacts, analyzing test results, identifying root causes, and searching for existing GitHub issues
 
 **Commands:**
 - **`/triage-prow-job:example`** - Example of triaging a failing Prow job by URL

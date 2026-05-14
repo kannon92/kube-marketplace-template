@@ -82,7 +82,7 @@
     },
     {
       "name": "triage-prow-job",
-      "description": "Triage a failing Prow job by fetching its artifacts, analyzing test results, and identifying root causes",
+      "description": "Triage a failing Prow job by fetching its artifacts, analyzing test results, identifying root causes, and searching for existing GitHub issues",
       "version": "0.0.1",
       "commands": [
         {
