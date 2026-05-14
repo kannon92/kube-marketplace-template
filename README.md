@@ -25,7 +25,7 @@ Install a specific plugin:
 - **sig-node-testgrid-prompt**: Triage the sig-node TestGrid dashboard and generate a comprehensive failure report
 - **triage-github-notifications**: Fetch and triage GitHub notifications, highlighting items that require action
 - **triage-issue**: Triage a GitHub issue by investigating the codebase, identifying the root cause, and proposing a fix
-- **triage-prow-job**: TODO: Add description
+- **triage-prow-job**: Triage a failing Prow job by fetching its artifacts, analyzing test results, identifying root causes, and searching for existing GitHub issues
 <!-- END PLUGINS -->
 
 ## Development

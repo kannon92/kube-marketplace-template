@@ -1,3 +1,3 @@
 # triage-prow-job
 
-TODO: Add plugin description
+Triage a failing Prow job by fetching its artifacts, analyzing test results, identifying root causes, and searching for existing GitHub issues.
