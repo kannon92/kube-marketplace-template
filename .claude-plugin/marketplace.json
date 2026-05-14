@@ -27,7 +27,7 @@
     {
       "name": "triage-prow-job",
       "source": "./plugins/triage-prow-job",
-      "description": "TODO: Add description"
+      "description": "Triage a failing Prow job by fetching its artifacts, analyzing test results, identifying root causes, and searching for existing GitHub issues"
     },
     {
       "name": "triage-github-notifications",
