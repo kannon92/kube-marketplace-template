@@ -33,8 +33,8 @@
         },
         {
           "name": "example",
-          "description": "Example command",
-          "synopsis": "/create-pr-from-changes:example",
+          "description": "Example of creating a pull request from the current branch",
+          "synopsis": "/create-pr-from-changes",
           "argument_hint": ""
         }
       ],
@@ -64,7 +64,7 @@
     },
     {
       "name": "sig-node-testgrid-prompt",
-      "description": "TODO: Add description",
+      "description": "Triage the sig-node TestGrid dashboard and generate a comprehensive failure report",
       "version": "0.0.1",
       "commands": [
         {
@@ -87,8 +87,8 @@
       "commands": [
         {
           "name": "example",
-          "description": "Example command",
-          "synopsis": "/triage-prow-job:example",
+          "description": "Example of triaging a failing Prow job by URL",
+          "synopsis": "/triage-prow-job https://prow.k8s.io/view/gs/kubernetes-ci-logs/logs/ci-kubernetes-e2e-gci-gce/1234567890",
           "argument_hint": ""
         },
         {
@@ -111,8 +111,8 @@
       "commands": [
         {
           "name": "example",
-          "description": "Example command",
-          "synopsis": "/triage-github-notifications:example",
+          "description": "Example of triaging GitHub notifications over the past week",
+          "synopsis": "/triage-github-notifications",
           "argument_hint": ""
         },
         {

@@ -25,7 +25,7 @@ Create a GitHub pull request from the current branch
 
 **Commands:**
 - **`/create-pr-from-changes:create-pr-from-changes`** - Create a GitHub pull request from the current branch
-- **`/create-pr-from-changes:example`** - Example command
+- **`/create-pr-from-changes:example`** - Example of creating a pull request from the current branch
 
 See [plugins/create-pr-from-changes/README.md](plugins/create-pr-from-changes/README.md) for detailed documentation.
 
@@ -52,7 +52,7 @@ See [plugins/sig-node-testgrid-prompt/README.md](plugins/sig-node-testgrid-promp
 Fetch and triage GitHub notifications, highlighting items that require action
 
 **Commands:**
-- **`/triage-github-notifications:example`** - Example command
+- **`/triage-github-notifications:example`** - Example of triaging GitHub notifications over the past week
 - **`/triage-github-notifications:triage-github-notifications`** - Fetch and triage GitHub notifications, highlighting items that require action
 
 See [plugins/triage-github-notifications/README.md](plugins/triage-github-notifications/README.md) for detailed documentation.
@@ -72,7 +72,7 @@ See [plugins/triage-issue/README.md](plugins/triage-issue/README.md) for detaile
 Triage a failing Prow job by fetching its artifacts, analyzing test results, identifying root causes, and searching for existing GitHub issues
 
 **Commands:**
-- **`/triage-prow-job:example`** - Example command
+- **`/triage-prow-job:example`** - Example of triaging a failing Prow job by URL
 - **`/triage-prow-job:triage-prow-job`** - Triage a failing Prow job from its URL
 
 See [plugins/triage-prow-job/README.md](plugins/triage-prow-job/README.md) for detailed documentation.

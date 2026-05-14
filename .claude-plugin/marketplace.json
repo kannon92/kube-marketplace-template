@@ -22,7 +22,7 @@
     {
       "name": "sig-node-testgrid-prompt",
       "source": "./plugins/sig-node-testgrid-prompt",
-      "description": "TODO: Add description"
+      "description": "Triage the sig-node TestGrid dashboard and generate a comprehensive failure report"
     },
     {
       "name": "triage-prow-job",
