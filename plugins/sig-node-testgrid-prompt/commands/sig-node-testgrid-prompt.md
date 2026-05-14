@@ -217,6 +217,46 @@ For presubmit jobs shown under `pr-logs/directory`, recover the concrete GCS pat
 9. Distinguish root causes from symptoms:
    - if one kubelet panic causes 20 downstream test failures, count that as one root cause with a cascade, not 20 unrelated bugs
 
+## TestGrid JSON examples
+
+Examples:
+
+- root dashboard HTML:
+  - `curl -sL https://testgrid.k8s.io/sig-node/`
+- filtered table JSON for one tab:
+  - `curl -sL 'https://testgrid.k8s.io/sig-node-containerd/table?tab=ci-node-e2e-containerd-alpha-features&dashboard=sig-node-containerd&exclude-non-failed-tests=10'`
+- useful fields:
+  - `tests[].name`
+  - `tests[].short_texts`
+  - `tests[].messages`
+  - `changelists`
+  - `timestamps`
+
+Use this JSON path to speed up:
+
+- exact fail/flake detection
+- overlap detection across tabs
+- identifying whether a tab is narrow and deterministic vs broad and unstable
+- selecting the highest-value builds to inspect in artifacts
+
+## Flake Summary Example
+
+Secondary dataset:
+
+- `curl -sL https://storage.googleapis.com/k8s-metrics/flakes-latest.json`
+
+Useful fields:
+
+- `<job>.consistency`
+- `<job>.flakes`
+- `<job>.test_flakes`
+
+Use this dataset to speed up:
+
+- identifying historically unstable jobs that deserve extra scrutiny
+- identifying exact tests with recurring flake history
+- deciding whether a current TestGrid row looks like a recurring flake family or a newer deterministic break
+
 ## GitHub and code search
 
 - Search issues with `gh search issues --repo kubernetes/kubernetes '<term>'`

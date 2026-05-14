@@ -1,0 +1,11 @@
+# skillsaw configuration
+# https://github.com/stbenjam/skillsaw
+
+rules:
+  context-budget:
+    enabled: auto
+    severity: warning
+    limits:
+      command:
+        warn: 5000
+        error: 10000
